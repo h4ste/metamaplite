@@ -34,7 +34,7 @@ dependencies {
     compile group: 'gov.nih.nlm.nls', name: 'aec_mrd_wsd', version:'1.0-SNAPSHOT'
     compile group: 'net.sf.opencsv', name: 'opencsv', version:'2.3'
     compile group: 'org.codehaus.woodstox', name: 'stax2-api', version:'4.0.0'
-    compile group: 'net.java.dev.stax-utils', name: 'stax-utils', version:'20070216'
+    // compile group: 'net.java.dev.stax-utils', name: 'stax-utils', version:'20070216'
     compile group: 'org.codehaus.woodstox', name: 'woodstox-core-asl', version:'4.1.4'
     compile group: 'xmlunit', name: 'xmlunit', version:'1.4'
     compile group: 'org.apache.uima', name: 'uimaj-core', version:'2.3.1'
