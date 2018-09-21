@@ -238,7 +238,7 @@ public class BioCPipeline {
   
   /**
    * Invoke sentence processing pipeline on each sentence in supplied sentence list.
-   * @parm docid document identifier
+   * @param docid document identifier
    * @param passage containing list of sentences
    * @return list of results from sentence processing pipeline, one per sentence in input list.
    * @throws FileNotFoundException File Not Found Exception
