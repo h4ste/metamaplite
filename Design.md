@@ -132,7 +132,7 @@ MetaMapLite currently uses three dictionaries originally created for MetaMap:
 
 #### cuisourceinfo
 
-This is the table used for mapping strings in the input text to
+This is the table used for textMapping strings in the input text to
 concepts, this is the primary dictionary used by MetaMapLite.
 
 Each record contains the UMLS concept identifier, UMLS string

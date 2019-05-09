@@ -523,10 +523,15 @@ public class MetaMapLite {
       // Don't re-instantiate EntityLookup5 if instance exists.
       if ((this.entityLookup == null) ||
 	  (! (this.entityLookup instanceof EntityLookup5))) {
-	this.entityLookup = new EntityLookup5(properties);
+	    this.entityLookup = new EntityLookup5(properties);
       }
     } else {
-      this.entityLookup = new EntityLookup4(properties);
+      // Don't re-instantiate EntityLookup4 if instance exists.
+      // Note: (null instanceof X) is always false as per language spec.
+      // https://docs.oracle.com/javase/specs/jls/se10/html/jls-15.html#jls-15.20.2
+      if (!(this.entityLookup instanceof EntityLookup5)) {
+          this.entityLookup = new EntityLookup4(properties);
+      }
     }
     List<Entity> entityList = new ArrayList<Entity>();
     if (document.getID() == null) {
@@ -555,7 +560,12 @@ public class MetaMapLite {
 	this.entityLookup = new EntityLookup5(properties);
       }
     } else {
-      this.entityLookup = new EntityLookup4(properties);
+      // Don't re-instantiate EntityLookup4 if instance exists.
+      // Note: (null instanceof X) is always false as per language spec.
+      // https://docs.oracle.com/javase/specs/jls/se10/html/jls-15.html#jls-15.20.2
+      if (!(this.entityLookup instanceof EntityLookup5)) {
+        this.entityLookup = new EntityLookup4(properties);
+      }
     }
     List<Entity> entityList = new ArrayList<Entity>();    
     for (BioCDocument document: documentList) {

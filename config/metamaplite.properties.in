@@ -14,6 +14,10 @@ metamaplite.ivf.cuisourceinfoindex: @@basedir@@/data/ivf/strict/indices/cuisourc
 metamaplite.ivf.cuisemantictypeindex: @@basedir@@/data/ivf/strict/indices/cuist
 metamaplite.ivf.varsindex: @@basedir@@/data/ivf/strict/indices/vars
 
+# MMI Support
+metamaplite.index.directory: @@basedir@@/data/ivf/2017AA/Base/strict/indices/
+metamaplite.ivf.meshtcrelaxedindex: @@basedir@@/data/ivf/2017AA/Base/strict/indices/meshtcrelaxed
+
 # default semantic.type.list: if not defined is empty (all semantic types) 
 #   semantic type abbreviations separated by commas.
 # For example:
@@ -24,6 +28,7 @@ opennlp.en-sent.bin.path: @@basedir@@/data/models/en-sent.bin
 opennlp.en-token.bin.path: @@basedir@@/data/models/en-token.bin
 opennlp.en-pos-maxent.bin.path: @@basedir@@/data/models/en-pos-maxent.bin
 opennlp.en-chunker.bin.path: @@basedir@@/data/models/en-chunker.bin
+opennlp.en-pos.bin.path: @@basedir@@/data/models/en-pos-maxent.bin
 
 # What should a pipeline look-like?
 #
